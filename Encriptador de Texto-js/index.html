@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/" type="image/x-icon">
+        <!--=============== ICONS ===============-->
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>     
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title></title>
+    </head>
+<!-------------------- Header ------------------->   
+    <body class="body">
+        <header>
+            <div class="logo"><img src="img/favicon-32x32 (1).png" alt="">Alura Challenge!</div>
+        </header>
+
+        <h1> ENCRIPTADOR | DESENCRIPTADOR</h1>
+
+        <main class="container">
+            <section class="section">
+                <article class="container_encriptar">
+                    <div  class="content_encriptar grid">
+                        <button class="btn_encriptar" onclick="encriptar()">ENCRIPTAR</button>
+                    </div>
+                    <div class="section_text_encriptar">
+                        <textarea  placeholder="Ingresa el texto..." name="text_encriptar" cols="30" rows="10" class="text_encriptar"></textarea>
+                        <div class="container_alert">
+                            <p class="icon_alert flex">
+                                <ion-icon class="icon" name="alert-circle-outline"></ion-icon>
+                                Solo letras minúsculas y sin acentos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content_limpiar grid">
+                        <button class="btn_limpiar" id="limpiar" onclick="limpiar()">LIMPIAR</button>
+                    </div>
+                </article>
+
+                <article class="container_desencriptar">
+                    <div class="content_desencriptar grid">
+                        <button class="btn_desencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" class="text_desencriptar"></textarea>
+                    <div class="content_copiar grid">
+                        <button class="btn_copiar"  onclick="copiar()">COPIAR</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Proyecto realizado por Silvana Guardia Zuazo</h3>
+        </footer>
+
+
+        <!--================= MAIN JS ===================-->
+        <script src="main.js"></script>            
+    </body>
+
+
+
+
